@@ -174,3 +174,23 @@ color: #fff;
   .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
     border-bottom-color: #b92186;
   }
+  @media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        border-right: none;
+        height: 50%;
+    }
+
+    .right {
+        width: 100%;
+        height: 50%;
+    }
+
+    .map {
+        height: 100%; /* Adjust the height as needed for small screens */
+    }
+}
