@@ -1,0 +1,176 @@
+body {
+    color: #404040;
+    font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+.left {
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+.right {
+    width: 77%;
+    height: 100%;
+}
+.map {
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 20px 2px;
+  }
+
+
+.heading {
+display: flex;
+flex-direction: row;
+background: #fff;
+border-bottom: 1px solid #eee;
+min-height: 60px;
+line-height: 60px;
+padding: 0 10px;
+background-color: #84105d;
+color: #fff;
+}
+.addStore {
+  margin-left: 15px;
+  align-self: center;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 7px 14px;
+  border: 0;
+  color: #000000;
+  background: #ffffff;
+  line-height: 1.15;
+  font-size: 16px;
+  text-decoration: none;
+}
+.addStore:hover {
+  transition: all .1s ease;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #ef20aa;
+}
+.listings {
+    height: 100%;
+    overflow: scroll;
+    padding-bottom: 60px;
+  }
+
+  .listings .item {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .listings .item:last-child {
+    border-bottom: none;
+  }
+  .listings .item .title {
+    display: block;
+    font-size: 16px;
+    color: #84105d;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .listings .item .title small {
+    font-weight: 400;
+  }
+  .listings .item.active .title,
+  .listings .item .title:hover {
+    color: #b92186;
+  }
+  .listings .item.active {
+    background-color: #f8f8f8;
+  }
+  .detail {
+    margin-top: 6px;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Montserrat, sans-serif;
+  }
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #600c44;
+    border-radius: 0;
+  }
+
+  .marker {
+    border: none;
+    cursor: pointer;
+    height: 56px;
+    width: 56px;
+    background-image: url(https://img.icons8.com/color-glass/48/shop-location.png);
+    background-repeat: no-repeat;
+  }
+
+  /* Marker tweaks */
+  .mapboxgl-popup {
+    padding-bottom: 50px;
+  }
+
+  .mapboxgl-popup-close-button {
+    display: none;
+  }
+  .mapboxgl-popup-content {
+    font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    width: 220px;
+  }
+  .mapboxgl-popup-content h3 {
+    background: #b92186;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+    font-weight: 700;
+    margin-top: -15px;
+  }
+
+  .mapboxgl-popup-content h4 {
+    margin: 0;
+    padding: 5px;
+    font-weight: 400;
+  }
+
+  .mapboxgl-popup-content div {
+    padding: 5px;
+  }
+
+  .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+    margin-top: 10px;
+  }
+
+  .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+    border-bottom-color: #b92186;
+  }
