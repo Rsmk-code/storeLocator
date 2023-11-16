@@ -71,4 +71,3 @@ If you would like to contribute to the project, follow these steps:
 - Icons made by [Freepik](https://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com/)
 - Mapbox for providing the mapping platform
 
-Feel free to customize this readme to better suit your project. Add more sections or details as needed.
